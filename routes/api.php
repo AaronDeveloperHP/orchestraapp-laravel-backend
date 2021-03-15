@@ -99,11 +99,11 @@ Route::get('requests/reporte', function () {
         array(),
         array(
             'driver' => 'mysql',
-            'host' => '127.0.0.1',
+            'host' => 'eyw6324oty5fsovx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             'port' => '3306',
-            'database' => 'laravel2',
-            'username' => 'pepe',
-            'password' => 'sasa',
+            'database' => 'zctjy7mirdo35xjg',
+            'username' => 'oxoh5a184wpkmj5q',
+            'password' => 'jlko5zp0rbnxa6do',
         ),
     )->execute();
     $pathToFile = public_path('/Blank_Letter.pdf');
@@ -142,11 +142,11 @@ Route::get('status/reporte', function () {
         array(),
         array(
             'driver' => 'mysql',
-            'host' => '127.0.0.1',
+            'host' => 'eyw6324oty5fsovx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             'port' => '3306',
-            'database' => 'laravel2',
-            'username' => 'pepe',
-            'password' => 'sasa',
+            'database' => 'zctjy7mirdo35xjg',
+            'username' => 'oxoh5a184wpkmj5q',
+            'password' => 'jlko5zp0rbnxa6do',
         ),
     )->execute();
     $pathToFile = public_path('/Blank_Letter_2.pdf');
@@ -183,11 +183,11 @@ Route::get('data/reporte', function () {
         array(),
         array(
             'driver' => 'mysql',
-            'host' => '127.0.0.1',
+            'host' => 'eyw6324oty5fsovx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
             'port' => '3306',
-            'database' => 'orchestra',
-            'username' => 'root',
-            'password' => '',
+            'database' => 'zctjy7mirdo35xjg',
+            'username' => 'oxoh5a184wpkmj5q',
+            'password' => 'jlko5zp0rbnxa6do',
         ),
     )->execute();
     $pathToFile = public_path('/orquestadatos.pdf');
