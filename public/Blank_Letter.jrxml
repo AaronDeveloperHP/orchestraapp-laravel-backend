@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_Letter" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e346211-b035-46c4-b8f1-17e9fb766ac6">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="AWS Connection"/>
+	<queryString language="SQL">
+		<![CDATA[select * from requests]]>
+	</queryString>
+	<field name="id" class="java.math.BigInteger">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="created_at"/>
+		<property name="com.jaspersoft.studio.field.label" value="created_at"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="updated_at"/>
+		<property name="com.jaspersoft.studio.field.label" value="updated_at"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="type"/>
+		<property name="com.jaspersoft.studio.field.label" value="type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="startDate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="startDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="startDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="endDate" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="endDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="endDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reason" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="reason"/>
+		<property name="com.jaspersoft.studio.field.label" value="reason"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="revised" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="revised"/>
+		<property name="com.jaspersoft.studio.field.label" value="revised"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="userEmail" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="userEmail"/>
+		<property name="com.jaspersoft.studio.field.label" value="userEmail"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="requests"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="126" y="30" width="320" height="40" uuid="4920ec33-5307-455f-8626-b92d57110031"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="24" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de solicitudes]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="31" width="100" height="30" uuid="fd7a307e-afb9-4b58-b532-bd35a2ff3046">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2eb99980-9854-411d-8cd1-724150a76961"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Usuario]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="30" width="100" height="30" uuid="d7ff8f3e-8558-4461-a16f-9b5cd572c468">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc590542-e19d-4b9c-a831-9b4b79813a02"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Tipo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="30" width="100" height="30" uuid="f33c8ce5-0cfa-4a34-a825-fdd52d1dda8f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6dc18797-43cd-4a11-87fd-a198c39790e7"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Motivo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="31" width="100" height="30" uuid="a23dcd4f-b2d6-4d70-83ff-289c2eea59f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0f1edac-cee9-400d-b340-ca6952dd5721"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="31" width="100" height="30" uuid="7e34cc20-51f9-443e-9e9d-d3497096c165">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e0ef1654-20e9-48a0-b81f-5e21e2ad6c26"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de Inicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="30" width="100" height="30" uuid="eb8aeb83-2a4b-4aa2-8e40-51a301eba241">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09988b9e-aa73-4b6b-828f-207417fb61a8"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Fecha de finalización]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="100" height="30" uuid="ca565385-76ec-44e3-9443-ba8e2d2086c9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2eb99980-9854-411d-8cd1-724150a76961"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{userEmail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="100" height="30" uuid="be802f98-8915-46f4-869e-dc4fac947d49">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dc590542-e19d-4b9c-a831-9b4b79813a02"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="100" height="30" uuid="0d0297f8-1cfb-44f8-bf47-7556fc242001">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6dc18797-43cd-4a11-87fd-a198c39790e7"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{reason}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="100" height="30" uuid="7c1f00f6-1094-49c3-88e5-02e27332692b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b0f1edac-cee9-400d-b340-ca6952dd5721"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{revised}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="0" width="100" height="30" uuid="703887fd-e7f5-4806-85b3-219acb7c9369">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e0ef1654-20e9-48a0-b81f-5e21e2ad6c26"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{startDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="100" height="30" uuid="a8e5b997-6b5e-4ac3-9fa8-f93e87b2439a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09988b9e-aa73-4b6b-828f-207417fb61a8"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{endDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="46" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="60" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="-6" width="220" height="60" uuid="23bc4ca9-0ad8-4427-ba17-5cc4239d3476"/>
+				<imageExpression><![CDATA["https://ofgrancanaria.com/wp-content/uploads/2019/07/logo2.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="450" y="4" width="130" height="56" uuid="42cc67dc-a967-49f3-8313-4d02a0a30d45"/>
+				<imageExpression><![CDATA["https://fundacionorfeo.com/librodeoro/files/2018/12/012301-1.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="59" splitType="Stretch"/>
+	</summary>
+</jasperReport>
