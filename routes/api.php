@@ -62,8 +62,8 @@ Route::prefix('auth')->group(function () {
     Route::get('refresh', 'AuthController@refresh');
     Route::get('userData/{email}', 'AuthController@userData');
     Route::get('user', 'AuthController@user');
-    Route::get('users', 'UserController@index')->middleware('isAdmin');
-    Route::get('users/{id}', 'UserController@show')->middleware('isAdminOrSelf');
+    Route::get('users', 'UserController@index');
+    Route::get('users/{id}', 'UserController@show');
     Route::group(['middleware' => 'auth:api'], function(){
         Route::post('register', 'AuthController@register');
         Route::post('logout', 'AuthController@logout');
