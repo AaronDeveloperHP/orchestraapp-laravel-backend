@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8b551b53-b814-494a-adf8-20f6d00806b3/resourceGroups/orchestraApp/providers/Microsoft.Web/sites/OrchestraAppBackend",
+    "appService.deploySubpath": "."
+}
