@@ -21,9 +21,9 @@ class CreateRequestsTable extends Migration
             $table->string('endDate');
             $table->string('reason');
             $table->string('revised')->default('Sin revisar');
-
-            $table->string('userEmail'); 
-            $table->foreign('userEmail')->references('email')->on('users'); 
+            $table->string('commentary')->default('Nada que comentar');
+            $table->string('userEmail');
+            $table->foreign('userEmail')->references('email')->on('users');
         });
     }
 
