@@ -16,6 +16,7 @@ class AuthController extends Controller
     public function postTheme(Request $request){
         $user = User::whereEmail($request->email)->first();
         $user->otherTheme =! $user->otherTheme;
+        $user->save();
          return $user->otherTheme;
     }
     public function login(Request $request)
