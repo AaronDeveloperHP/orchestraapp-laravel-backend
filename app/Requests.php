@@ -8,7 +8,7 @@ class Requests extends Model
 {
 
     protected $fillable = [
-        'type', 'startDate', 'endDate', 'reason', 'revised', 'userEmail'
+        'type', 'startDate', 'endDate', 'reason', 'revised', 'userEmail','commentary'
     ];
 
     public function users(){
