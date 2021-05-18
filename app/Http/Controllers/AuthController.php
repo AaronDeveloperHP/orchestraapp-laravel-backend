@@ -13,6 +13,10 @@ class AuthController extends Controller
         $user = User::whereEmail($request->email)->first();
         return $user->otherTheme;
     }
+    public function postTheme(Request $request){
+        $user = User::whereEmail($request->email)->first();
+        $user->otherTheme=$request->otherTheme;
+    }
     public function login(Request $request)
     {
         $v = Validator::make($request->all(), [
