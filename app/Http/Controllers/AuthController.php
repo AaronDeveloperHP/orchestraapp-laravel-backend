@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
 class AuthController extends Controller
 {
+    public function getTheme(Request $request){
+        $user = User::whereEmail($request->email)->first();
+        return $user->otherTheme;
+    }
     public function login(Request $request)
     {
         $v = Validator::make($request->all(), [
