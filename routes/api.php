@@ -56,8 +56,8 @@ Route::prefix('status')->group(function () {
 });
 
 Route::prefix('auth')->group(function () {
-    Route::get('getTheme/{email}', 'AuthController@getTheme');
-    Route::get('postTheme/{email}', 'AuthController@postTheme');
+    Route::get('/getTheme/{email}', 'AuthController@getTheme');
+    Route::get('/postTheme/{email}', 'AuthController@postTheme');
     Route::post('login', 'AuthController@login');
     Route::get('refresh', 'AuthController@refresh');
     Route::get('userData/{email}', 'AuthController@userData');
