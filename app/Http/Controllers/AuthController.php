@@ -19,6 +19,8 @@ class AuthController extends Controller
         $user->save();
          return $user->otherTheme;
     }
+
+
     public function login(Request $request)
     {
         $v = Validator::make($request->all(), [
@@ -113,6 +115,11 @@ class AuthController extends Controller
         return User::query()
         ->where('email', 'LIKE', $email)
         ->get();
+    }
+
+    public function index()
+    {
+        return User::all();
     }
 
  /*    public function refresh()
